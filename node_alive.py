@@ -16,7 +16,7 @@ def ping(hostname):
 
 activehosts=[]
 
-for i in range(180,190):
+for i in range(180,185):
     ip="192.168.42."+str(i)
     status=ping(ip)
     if status==0 :
