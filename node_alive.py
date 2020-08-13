@@ -3,7 +3,7 @@ import subprocess
 def ping(hostname):
     p = subprocess.Popen('ping ' + hostname + ' -n 1', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    pingStatus = 0;
+    pingStatus = 0
 
     for line in p.stdout:
         output = line.rstrip().decode('UTF-8')
